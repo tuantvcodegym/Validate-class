@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Class</title>
+</head>
+<body>
+<script>
+    function validateClass(str) {
+        var regex = /^[(C|A|P)]+[0-9]{4}[(G|H|I|K|M)]$/;
+        if(regex.test(str)){
+            return true;
+        }
+        return false;
+    }
+    var a = 'C1218G';           //Ten lop hop le.
+    var b = 'M1218G';           //Ten lop khong hop le.
+    console.log(validateClass(a));
+    console.log(validateClass(b));
+</script>
+</body>
+</html>
